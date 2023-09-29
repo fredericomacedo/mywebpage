@@ -1,15 +1,1 @@
 
-.custom-bg {
-    height: 150px;
-    background-color: #9da7a2; /* You can choose any color you prefer */
-    color:white;
-    font-family: 'Raleway', sans-serif;
-    
-}
-.custom-about {
-    font-family: 'Quicksand', sans-serif;
-}
-.main-page-image img {
-    max-width: 600px;
-    height: auto;
-}
