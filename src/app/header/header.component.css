@@ -1,3 +1,17 @@
 .collapse {
     display: none;
 }
+
+/* Styles.css or HeaderComponent.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* or any color you prefer */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* optional: for shadow */
+    z-index: 1000; /* keep it above other elements */
+  }
+  /* Styles.css or YourMainContentComponent.css */
+
+  
