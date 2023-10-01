@@ -8,7 +8,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HeaderComponent {
   public isCollapsed = true;
   constructor(private router: Router){}
-
+  collapseNav() {
+    this.isCollapsed = true;
+  }
   navegateToEducationClick(): void{
     this.router.navigate(['/education'])
   }

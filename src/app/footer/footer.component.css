@@ -22,7 +22,7 @@
   footer {
     align-content: center;
     background-color: #ebe9e9;
-    color: white;
+    color: black;
     padding: 20px;
   }
   .divMidia a {
@@ -34,5 +34,20 @@
     color: rgb(190, 190, 190); /* or any other color you prefer for hover state */
     text-decoration: underline; /* adds underline on hover, optional */
 }
+.div-copyright {
+  margin:0px;
+  padding-top:20px;
+  background-color: #ebe9e9;
+  text-align: center;
+  color: rgb(113, 111, 111);
+  height: 40px;
+  
+}
 
-
+.img-footer {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.col-md-2 {
+  text-align: center;
+}

@@ -3,18 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frederico Lucio Macedo - Software Engineer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito:wght@300&family=Quicksand:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Dela+Gothic+One&family=Nunito:wght@300&family=Quicksand:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
 <div class="header">
 
   <nav class="nav-divider navbar navbar-expand-lg bg-white navbar-light">
@@ -30,22 +23,22 @@
         <div [class.collapse]="isCollapsed" class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto"> <!-- Use ms-auto here -->
             <li class="nav-item">
-              <a class="nav-link active" routerLink="/">Home</a>
+              <a class="nav-link active" routerLink="/" (click)="collapseNav()">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/education">Education</a>
+              <a class="nav-link" routerLink="/education" (click)="collapseNav()">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/experience">Experience</a>
+              <a class="nav-link" routerLink="/experience" (click)="collapseNav()">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/projects">Projects</a>
+              <a class="nav-link" routerLink="/projects" (click)="collapseNav()">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/about">About</a>
+              <a class="nav-link" routerLink="/about" (click)="collapseNav()">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/contact">Contact</a>
+              <a class="nav-link" routerLink="/contact" (click)="collapseNav()">Contact</a>
             </li>
           </ul>
         </div>
