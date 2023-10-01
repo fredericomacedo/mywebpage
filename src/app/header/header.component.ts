@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  public isCollapsed = true;
   constructor(private router: Router){}
 
   navegateToEducationClick(): void{
