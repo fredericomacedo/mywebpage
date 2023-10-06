@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +24,15 @@ import { HomeComponent } from './home/home.component';
     ProjectsComponent,
     ContactComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

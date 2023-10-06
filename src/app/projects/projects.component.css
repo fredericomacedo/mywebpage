@@ -12,6 +12,14 @@
     font-family: 'Quicksand', sans-serif;
 }
 .main-page-image img {
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
 }
+.icon-topic img {
+    max-width: 60px;
+    height:  auto;
+}
+.bold-text {
+    font-weight: bold;
+  }
+  
