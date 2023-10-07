@@ -15,6 +15,7 @@
 .main-page-image img {
     max-width: 600px;
     height: auto;
+    padding: 10px;
 }
 
 #home-intro {
