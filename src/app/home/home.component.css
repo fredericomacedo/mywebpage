@@ -22,11 +22,19 @@
     background-color: white;
 }
 
-#home-intro h1 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+
+
+.lead-title {
+    font-family: 'Barlow Semi Condensed', cursive;
+    font-size: 48px;
+    color: #a3a4a4;
 }
 
+.lead-sub-title {
+    font-family: 'Dela Gothic One', cursive;
+    
+    color: #FF725E;
+}
 #home-intro p {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
