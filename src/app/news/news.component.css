@@ -1,0 +1,71 @@
+.main-content {
+    padding-top: 60px; /* Adjust this value based on the height of your header */
+  }
+.custom-bg {
+    height: 150px;
+    background-color: #9da7a2; /* You can choose any color you prefer */
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+/* Default styling for larger screens */
+.card-img-top {
+    max-height: 500px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) { 
+    /* Adjustments for medium screens, e.g., tablets */
+    .card-img-top {
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    /* Adjustments for small screens, e.g., larger phones */
+    .card-img-top {
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) { 
+    /* Adjustments for extra small screens, e.g., smaller phones */
+    .card-img-top {
+        max-height: 150px;
+    }
+}
+
+.custom-about {
+    font-family: 'Quicksand', sans-serif;
+}
+.portfolio-description {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1rem;
+    color: #FFC100;
+}
+.lead-sub-title {
+    font-family: 'Dela Gothic One', cursive;
+    
+    color: #FFC100;
+}
+.main-page-image img {
+    max-width: 100%;
+    min-height: 350px; /* adjust based on your design */
+    height: auto;
+    padding: 40px;
+    margin-right: 2%;
+}
+.icon-topic img {
+    max-width: 40px;
+    height:  auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: right;
+}
+.bold-text {
+    font-weight: bold;
+  }
+  

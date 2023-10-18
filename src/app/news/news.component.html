@@ -1,0 +1,53 @@
+
+<div class="main-content">
+  <div class="container mt-5 custom-about">
+    <div class="row">
+
+      <div class="col-md-6 main-page-image" @fadeIn>
+        
+        <img  src="assets/images/News-bro.svg" alt="Logo">
+      </div>
+
+      
+      <div class="col-md-6">
+
+        
+        <h1 class="display-4" style="font-family: 'Barlow Semi Condensed', sans-serif; font-size: 3rem; color: #a3a4a4;">Tech News Hub</h1>
+        <br>
+        
+        <p>
+          <span class="bold-text"> Welcome to the Tech News Hub! 🚀</span>
+          <br>
+          Ever wondered what happens when a developer drinks too much coffee and gets their hands on some APIs? 
+          Well, you're looking at it! Welcome to my little tech playground, where the bits meet the bytes in a 
+          digital tango.
+          Driven by caffeine and code, I've connected with AlphaVantage to bring you the freshest tech scoops, 
+          hot off the digital press! But that's not all; this page is more than just headlines. It's my love 
+          letter to API magic, front-end flirting, and some back-end heavy lifting.
+          Jump in, scroll around, maybe even chuckle at how I've transformed complex code into clicky articles. 
+          Here's to the fun side of tech, and of course, to my never-ending quest of turning coffee into cool 
+          codes! Please scroll down and check it out ⬇️.
+        </p>
+      </div>
+      
+      
+    </div>
+    <h5 class=" lead lead-sub-title">Tech Company's News On The Market</h5>
+      <hr>
+
+    <div *ngFor="let news of newsData" class="card mb-4">
+      <img [src]="news.banner_image" class="card-img-top" alt="{{ news.title }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ news.title }}</h5>
+        <p class="card-text">{{ news.summary }}</p>
+        <p><strong>Source:</strong> {{ news.source }}</p>
+        <a [href]="news.url" target="_blank" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+

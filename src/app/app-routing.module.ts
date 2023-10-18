@@ -7,6 +7,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Set as default route
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent},
   { path: 'projects', component: ProjectsComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'about', component: AboutComponent}
+  { path: 'about', component: AboutComponent},
+  { path: 'news', component: NewsComponent},
 ];
 
 @NgModule({
