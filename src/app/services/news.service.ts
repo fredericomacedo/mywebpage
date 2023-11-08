@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class NewsService {
 
-  private baseUrl = 'http://localhost:3000';  // Change to your server's address and port if different
-  //private baseUrl = 'https://alphaserverapi-bcbe02aa8105.herokuapp.com';
+  //private baseUrl = 'http://localhost:3000';  // Change to your server's address and port if different
+  private baseUrl = 'https://market-news-api-b456dd0c70b8.herokuapp.com/news/tech';
 
   constructor(private http: HttpClient) { }
 
   getNews(): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/news`);
+    return this.http.get<any>(`${this.baseUrl}`);
   }
 }
