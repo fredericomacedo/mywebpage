@@ -68,4 +68,11 @@
 .bold-text {
     font-weight: bold;
   }
+
+
+
+.input-spacing {
+    margin-right: 10px;
+    width: 50%
+  }
   

@@ -12,9 +12,10 @@ import { catchError } from 'rxjs/operators';
 export class NewsComponent implements OnInit {
 
   newsData: any[] = [];
+  companyOverview: any;
   isLoading: boolean = true;  // for loading spinner
   error: any = null;          // for error messages
-
+  symbol: string = ''; // to store the entered symbol
 
   constructor(private http: HttpClient, private newsService: NewsService) { }
 
@@ -37,6 +38,24 @@ export class NewsComponent implements OnInit {
         console.log(this.newsData);
       }
     );
+  }
+
+  fetchOverview(): void {
+    this.isLoading = true;
+    this.newsService.getCompanyOverview(this.symbol).pipe(
+      catchError(error => {
+        this.error = error;
+        this.isLoading = false;
+        return throwError(error);
+      })
+
+    ).subscribe(
+      data => {
+        this.companyOverview = data;
+        this.isLoading = false;
+      }
+    );
+
   }
 
 }
