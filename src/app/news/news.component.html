@@ -43,7 +43,11 @@
                       <img src="assets/images/Investment-data.svg" alt="main-image" class="img-fluid rounded-circle">
                   </div>
                   <div class="col-md-6">
-                    <h4 class="lead lead-sub-title" >Company Overview</h4>
+                    <h4 class="lead lead-sub-title" >🌟 Unleashing the Magic of APIs! 🚀 Company Overview</h4>
+                    <p>Are you captivated by the ever-evolving market data? Well, I've got something thrilling for you! 
+                      🌐 Dive into my simplistic yet powerful demo that lets you effortlessly search for essential details 
+                      about any company listed in the S&P 500. This isn't just any app; it's your gateway to real-time insights,
+                       all retrieved through direct API calls. 📈💻</p>
                       <div>
                         <input type="text" [(ngModel)]="symbol" placeholder="Type company symbol, e.g. IBM" class="input-spacing">
                         <button class="btn btn-primary" (click)="fetchOverview()">Get Company Overview</button>
@@ -55,7 +59,7 @@
                           <h5>Sector: {{companyOverview.Sector}}</h5>
                           
                           <h5>Industry: {{companyOverview.Industry}}</h5>
-                          <h5>Market Captalization: {{companyOverview.MarketCapitalization}}</h5>
+                          <h5>Market Captalization: {{ companyOverview.MarketCapitalization | currency:'USD': 'symbol':'1.0-0' }}</h5>
                           <h5>PERatio: {{companyOverview.PERatio}}</h5>
                           <h5>BookValue: {{companyOverview.BookValue}}</h5>
                           <h5>Dividend Per Share: {{companyOverview.DividendPerShare}}</h5>
