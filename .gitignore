@@ -2,7 +2,7 @@
 
 # Compiled output
 /dist
-/environments
+#/environments
 /tmp
 /out-tsc
 /bazel-out
